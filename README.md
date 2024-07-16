@@ -14,7 +14,7 @@ This project serves as a demonstration for the clap and reqwest crates.
 To install the Weather CLI, make sure you have Rust and Cargo installed on your system. Then, clone the repository and build the project:
 
 ```bash
-git clone https://github.com/yourusername/weather-cli.git
+git clone https://github.com/0xsouravm/weather-cli.git
 cd weather-cli
 
 cargo build --release
