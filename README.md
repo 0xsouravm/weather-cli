@@ -29,7 +29,7 @@ To get weather information for a specific zipcode:
 ```bash
 weather <zipcode>
 ```
-Replace <zipcode> with the ISO 3166 zipcode for which you want to retrieve weather information.  
+Replace <zipcode> with the ISO 3166 zipcode for which you want to retrieve weather information. Ex - E14,GB (London)
 ### Login
 To log in to the weather service:
 ```bash
