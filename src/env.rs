@@ -10,9 +10,9 @@ pub fn weather_api_key() -> Option<String> {
     std::env::var("OPEN_WEATHER_API_KEY").ok()
 }
 
-pub fn mongodb_uri() -> Option<String> {
-    std::env::var("MONGO_DB_CONNECTION_STRING").ok()
-}
+// pub fn mongodb_uri() -> Option<String> {
+//     std::env::var("MONGO_DB_CONNECTION_STRING").ok()
+// }
 
 pub fn env() -> Option<String> {
     std::env::var("ENV")

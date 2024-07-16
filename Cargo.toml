@@ -11,5 +11,3 @@ serde = { version = "1.0", features = ["derive"] }
 tokio = { version = "1", features = ["full"] }
 dotenv = "0.15"
 prettytable = "0.10.0"
-mongodb = "2.1"
-bson = { version = "2", features = ["chrono-0_4"] } # Needed for using chrono datetime in doc
