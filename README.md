@@ -7,7 +7,6 @@ This project serves as a demonstration for the clap and reqwest crates.
 ## Features
 
 - Get weather information for a specific zipcode
-- Login and logout functionality (TODO)
 
 ## Installation
 
@@ -30,16 +29,7 @@ To get weather information for a specific zipcode:
 weather <zipcode>
 ```
 Replace <zipcode> with the ISO 3166 zipcode for which you want to retrieve weather information. Ex - E14,GB (London)
-### Login
-To log in to the weather service:
-```bash
-weather login
-```
-### Logout
-To log out from the weather service:
-```bash
-weather logout
-```
+
 ## Configuration
 The application uses environment variables for configuration. Create a .env file in the project root directory with the following variables:
 ```text
