@@ -11,17 +11,6 @@ struct Cli {
     /// The ISO 3166 zipcode to get weather information.
     #[arg(required = false)]
     zipcode: Option<String>,
-
-    #[command(subcommand)]
-    command: Option<Commands>,
-}
-
-#[derive(Subcommand)]
-enum Commands {
-    /// Login to the weather service
-    Login,
-    /// Logout from the weather service
-    Logout,
 }
 
 #[tokio::main]
@@ -34,14 +23,6 @@ async fn main() {
     match (&cli.zipcode, &cli.command) {
         (Some(zipcode), None) => {
             cli::get_weather_for(zipcode).await;
-        },
-        (None, Some(Commands::Login)) => {
-            println!("Logging in...");
-            // Implement your login logic here
-        },
-        (None, Some(Commands::Logout)) => {
-            println!("Logging out...");
-            // Implement your logout logic here
         },
         _ => eprintln!("No valid command or zipcode provided"),
     }
